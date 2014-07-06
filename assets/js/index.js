@@ -42,6 +42,7 @@ function searchEvent(siteName){
     $.ajax({
       url: targetUrl,
       type: 'GET',
+      crossDomain: true,
       dataType: 'jsonp',
       timeout: 10000,
       success: function(data, jsonp) {
@@ -80,6 +81,7 @@ function searchEvent(siteName){
     $.ajax({
       url: targetUrl,
       type: 'GET',
+      crossDomain: true,
       dataType: 'jsonp',
       timeout: 10000,
       success: function(data, json) {
@@ -118,6 +120,7 @@ function searchEvent(siteName){
     $.ajax({
       url: targetUrl,
       type: 'GET',
+      crossDomain: true,
       dataType: 'jsonp',
       timeout: 10000,
       success: function(data, jsonp) {
