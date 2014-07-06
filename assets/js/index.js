@@ -35,8 +35,9 @@ function searchEvent(siteName){
   if (siteName.id === 'atnd') {
 
     var atndUrl = 'http://api.atnd.org/events/';
+    var format = 'jsonp';
 
-    var targetUrl = atndUrl + '?keyword=' + keyword + '&count=' + count;
+    var targetUrl = atndUrl + '?keyword=' + keyword + '&count=' + count + '&format=' + format;
 
     $.ajax({
       url: targetUrl,
@@ -75,7 +76,7 @@ function searchEvent(siteName){
 
   } else if (siteName.id === 'connpass') {
 
-    var targetUrl = 'http://connpass.com/api/v1/event/' + '?keyword=' + keyword;
+    var targetUrl = 'http://connpass.com/api/v1/event/' + '?keyword=' + keyword + '&count=' + count;
 
     $.ajax({
       url: targetUrl,
