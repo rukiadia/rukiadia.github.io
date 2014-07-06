@@ -1,4 +1,6 @@
-rukiadia.github.io
+イベント検索ツール公開用リポジトリ
 ==================
 
-I'll post what I created
+各種イベント開催サービスのイベントを一括で検索出来るツールにする予定。
+
+現状は、ATND、connpass、Doorkeeperのイベントを単体のキーワードで検索できるだけの状態。
