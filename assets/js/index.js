@@ -35,17 +35,16 @@ function searchEvent(siteName){
   if (siteName.id === 'atnd') {
 
     var atndUrl = 'http://api.atnd.org/events/';
-    var format = 'jsonp';
 
-    var targetUrl = atndUrl + '?keyword=' + keyword + '&count=' + count +'&format=' + format;
+    var targetUrl = atndUrl + '?keyword=' + keyword + '&count=' + count;
 
     $.ajax({
       url: targetUrl,
       type: 'GET',
-      crossDomain: true,
       dataType: 'jsonp',
+      crossDomain: true,
       timeout: 10000,
-      success: function(data, jsonp) {
+      success: function(data) {
 
         var eventInfo = data.events;
 
@@ -81,10 +80,10 @@ function searchEvent(siteName){
     $.ajax({
       url: targetUrl,
       type: 'GET',
-      crossDomain: true,
       dataType: 'jsonp',
+      crossDomain: true,
       timeout: 10000,
-      success: function(data, json) {
+      success: function(data) {
 
         var eventInfo = data.events;
 
@@ -120,10 +119,10 @@ function searchEvent(siteName){
     $.ajax({
       url: targetUrl,
       type: 'GET',
-      crossDomain: true,
       dataType: 'jsonp',
+      crossDomain: true,
       timeout: 10000,
-      success: function(data, jsonp) {
+      success: function(data) {
 
         var eventInfo = data;
 
