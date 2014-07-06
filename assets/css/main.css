@@ -1,0 +1,15 @@
+body {
+  font-family: Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+}
+
+div#message {
+  display: none;
+}
+
+div#warning {
+  display: none;
+}
+
+div.container {
+  margin-top: 30px;
+}
