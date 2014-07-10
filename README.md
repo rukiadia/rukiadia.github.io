@@ -1,6 +1,15 @@
-イベント検索ツール公開用リポジトリ
-==================
+イベント情報検索ツール
+===============
 
-各種イベント開催サービスのイベントを一括で検索出来るツールにする予定。
+各種イベント管理サイトの情報をキーワード検索で取得し、一覧表示を行うツール。
 
-現状は、ATND、connpass、Doorkeeperのイベントを単体のキーワードで検索できるだけの状態。
+2014/7/10現在
+
+* ATND
+* connpass
+* Doorkeeper
+
+のイベント検索に対応。
+
+Copyright (c) 2013 Sho Yamada  
+This software is released under the MIT License

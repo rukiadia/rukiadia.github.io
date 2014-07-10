@@ -1,5 +1,12 @@
 body {
-  font-family: Hiragino Kaku Gothic ProN', Meiryo, sans-serif;
+  font-family: "Meiryo", "Hiragino Kaku Gothic Pro";
+}
+p, h1, h2, h3, h4, h5 {
+  font-family: "Meiryo", "Hiragino Kaku Gothic Pro";
+}
+
+div#loading {
+  text-align: center;
 }
 
 div#message {
