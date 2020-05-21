@@ -2,8 +2,7 @@ name: Node.js CI
 
 on:
   push:
-    branches:
-      master
+    branches: [ master ]
 
 jobs:
   deploy:
@@ -18,9 +17,13 @@ jobs:
         run: npm ci
       - name: build
         run: npm run build
+      - name: export static html
+        run: npm run export
+      - name: jekyll
+        run: touch ./.nojekyll
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.6.1
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: master
-          publish_dir: .
+          BRANCH: master
+          FOLDER: out
