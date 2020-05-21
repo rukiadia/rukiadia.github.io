@@ -1,6 +1,6 @@
 .DS_Store
 ../.DS_Store
-
-/node_modules
-/.next
 /.idea
+
+next_blog/node_modules
+next_blog/.next
