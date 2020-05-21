@@ -1,9 +1,6 @@
 name: Node.js CI
 
-on:
-  push:
-    branches:
-      master
+on: [push]
 
 jobs:
   deploy:
@@ -19,8 +16,8 @@ jobs:
       - name: build
         run: npm run build
       - name: Deploy
-        uses: peaceiris/actions-gh-pages@v3.6.1
+        uses: JamesIves/github-pages-deploy-action@releases/v3
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          publish_branch: master
-          publish_dir: .
+          BRANCH: gh-pages
+          FOLDER: .
