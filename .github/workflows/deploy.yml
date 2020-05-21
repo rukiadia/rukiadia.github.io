@@ -18,4 +18,4 @@ jobs:
       - name: build
         run: npm run build
       - name: add nojekyll
-        run: touch ./out/.nojekyll
+        run: touch out/.nojekyll
