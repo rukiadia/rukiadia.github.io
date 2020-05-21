@@ -2,7 +2,8 @@ name: Node.js CI
 
 on:
   push:
-    branches: [ master ]
+    branches:
+      master
 
 jobs:
   deploy:
@@ -20,6 +21,6 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
-          github_token: ${{ secrets.GITHUB_TOKEN }}
-          publish_dir: .
-          publish_branch: master
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          BRANCH: master
+          FOLDER: .
