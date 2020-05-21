@@ -2,5 +2,5 @@
 ../.DS_Store
 /.idea
 
-next_blog/node_modules
-next_blog/.next
+node_modules
+.next
