@@ -15,6 +15,8 @@ jobs:
         run: npm ci
       - name: build
         run: npm run build
+      - name: export static html
+        run: npm run export
       - name: jekyll
         run: touch ./.nojekyll
       - name: Deploy
@@ -22,4 +24,4 @@ jobs:
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           BRANCH: gh-pages
-          FOLDER: .
+          FOLDER: ./out
