@@ -22,5 +22,5 @@ jobs:
         uses: peaceiris/actions-gh-pages@v3.6.1
         with:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          BRANCH: master
-          FOLDER: .
+          publish_branch: master
+          publish_dir: .
